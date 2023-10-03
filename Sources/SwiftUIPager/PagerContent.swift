@@ -211,7 +211,7 @@ extension Pager {
           
             #if os(macOS)
             wrappedView = wrappedView
-              .focusable()
+              .focusable(false)
               .onMoveCommand(perform: self.onMoveCommandSent)
               .eraseToAny()
             #endif
